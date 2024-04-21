@@ -1,7 +1,5 @@
 @echo off
 title Changes in region, language and time
-chcp 65001
-REM Creating a Newline variable (the two blank lines are required!)
 set NLM=^
 
 set NL=^^^%NLM%%NLM%^%NLM%%NLM%
@@ -25,7 +23,6 @@ if "%line%"=="RU" (
 goto :DONE
 
 :DONE
-if "%line%"=="CH" (echo You've changed your language on China)
-if "%line%"=="RU" (echo You've changed your language on Russian)
+
 shutdown /l
 pause
